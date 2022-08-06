@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/main.css">
+  <title>DanCon Coworking</title>
+  <link rel="apple-touch-icon" sizes="57x57" href="img icon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="img icon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="img icon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="img icon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="img icon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="img icon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="img icon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="img icon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="img icon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="img icon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="img icon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="img icon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="img icon/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+</head>
+<body>
+  <header>
+    <div id="logo" onclick="slowScroll('#top')">
+      <span>DanCon Coworking</span>
+    </div>
+    <div id="about">
+      <a  onclick="slowScroll('#main')"  class="lng-unit">Возможности</a>
+      <a  onclick="slowScroll('.container')" class="lng-chip">Преимущества</a>
+      <a  onclick="slowScroll('#contacts')" class="lng-memory">Контакты</a>
+      <a  onclick="slowScroll('#faq')">FAQ</a>
+
+      <select class="change-lang">
+            <option value="ru" selected>RU</option>
+            <option value="en">EN</option>
+      </select>
+      </div>
+  </header>
+
+  <div id="top">
+    
+    <h1 class="lng-memory-type"> Работа с комфортом! </h1>
+    <img src="icons/logotipe1.png">
+  </div>
+
+  <div id="main">
+    <div class="intro">
+      <h2 class="lng-cool">Наши услуги помогут вам!</h2>
+      <span class="lng-cool-type">Большой выбор всего, что может вам пригодиться.</span>
+    </div>
+    <div class="text">
+      <span class="lng-cool-type-type">Готовый к работе офис
+DanCon Coworking и управляемые офисы полностью меблированы, профессионально оборудованы,
+и управляются нашей командой. Экономьте деньги и время, чтобы сосредоточиться на своей работе и развивать свой
+бизнес. Мы позаботимся обо всем, что вам нужно для продуктивной работы.</span>
+    </div>
+  </div>
+
+  <div class="container">
+    <h1>Наши преимущества</h1>
+           <div class="features">
+                <div class="features_item">
+                   <img class="features_icon" src="icons/external-place-camping-icongeek26-outline-gradient-icongeek26.png">
+                   <h4 class="features_title lng-more-type">Расположение</h4>
+                   <div class="features_text lng-more-type-text">Центральный район. Удобная транспортная развязка и всё самое необходимое всегда рядом.</div>
+              </div>
+              <div class="features_item">
+                <img class="features_icon" src="icons/hot-price.png">
+                <h4 class="features_title lng-more-type-type">Цена</h4>
+                <div class="features_text lng-more-type-text-a">Предлагаем самые приятные и доступные условия аренды рабочих мест, а также лучший сервис во всем городе.</div>
+           </div>
+           <div class="features_item">
+            <img class="features_icon" src="icons/handshake.png">
+            <h4 class="features_title lng-more-type-type-type">Атмосфера</h4>
+            <div class="features_text lng-more-type-text-b">Приятная, уютная и дружелюбная атмосфера. У нас вы найдете все условия для комфортной работы.</div>
+       </div>
+         </div>
+  </div>
+
+  <div id="contacts">
+    <center><h5 class="lng-mail">Оставьте заявку и мы с вами свяжемся!</h5></center>
+    <form id="form_input">
+
+    
+      <label for="name" class="lng-mail-a">Имя<span>*</span></label><br>
+
+      <input type="text" name="name" placeholder="Введите имя / Enter your name" id="name"><br>
+      
+      <label for="email" class="lng-mail-type">Ваша почта<span>*</span></label><br>
+			
+      <input type="email" name="email" placeholder="Введите email / Enter your e-mail" id="email"><br>
+			
+      <label for="message" class="lng-mail-type-type">Сообщение<span>*</span></label><br>
+			
+      <textarea type="text" name="message" placeholder="Введите ваше сообщение / Enter your message" id="message"></textarea><br>
+			
+      <button type="button" id="sendMail" name="button" class="btn lng-button">Отправить</button>
+    
+  </form>
+  <div id="errorMess"></div>
+  </div>
+
+  <div id="faq">
+    <div>
+      <span class="title lng-faq-main">Оплата</span><br>
+      <p></p>
+      <span class="heading lng-faq-a">Рабочее место - 3000 грн. (мес.)</span>
+      <p class="lng-faq-text">Бронирование не требуется, приходите в любое время и используйте любой свободный стол.</p>
+      
+      <span class="heading lng-faq-b">Фиксированное рабочее место - 3600 грн. (мес.)</span>
+      <p class="lng-faq-text-a">Держите выделенное место всегда доступным только для вас.</p>
+      
+      <span class="heading lng-faq-c">Личный кабинет до 6 человек - 21000 грн. (мес.)</span>
+      <p class="lng-faq-text-b">Арендуйте отдельную комнату только для своей команды.</p>
+      <p class="lng-faq-text-c">*Арендуя рабочее место вы получаете доступ к общим объектам, таким как кухня, душевая комната, и т.д. </p>
+      <hr size="5" color="orange">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2645.096501281823!2d34.99465854148041!3d48.473862566008805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbe24d3920a12f%3A0xe04dc9bdfd28c372!2z0YPQuy4g0KDQvtC80LDQvdCwINCo0YPRhdC10LLQuNGH0LAsIDY4LCDQlNC90LjQv9GA0L4sINCU0L3QtdC_0YDQvtC_0LXRgtGA0L7QstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCA0OTAwMA!5e0!3m2!1sru!2sua!4v1635933105423!5m2!1sru!2sua" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      <p></p>
+      <address>
+      <span class="heading lng-about-1">Адрес:</span>
+      <p class="lng-about-text-a">ул. Романа Шухевича, 68</p>
+      <span class="heading lng-about-2">Связь с нами:</span>
+      <p class="lng-about-text-b">+380636740822 - info@dancon.work</p>
+      <span class="heading lng-about-3">Часы работы:</span>
+      <p class="lng-about-text-c">С 9:00 до 21:00 с понедельника по субботу (выходной - воскресенье).</p>
+     </address>
+    </div>
+      <div>
+      <span class="title lng-what-1">Что мы предлагаем:</span>
+      <p></p>
+      <span class="heading lng-what-2">Фиксированные рабочие места</span>
+      <p></p>
+      <span class="heading lng-what-3">Удобные кресла</span>
+      <p></p>
+      <span class="heading lng-what-4">Приятная, уютная и дружелюбная атмосфера.</span>
+      <p></p>
+      <span class="heading lng-what-5">Высокая скорость wi-fi</span>
+      <p></p>
+      <span class="heading lng-what-6">Безлимитные кофе и чай</span>
+      <p></p>
+      <span class="heading lng-what-7">Удобное расположение не далеко от центра города</span>
+      <p></p>
+      <span class="heading lng-what-8">Доступ к принтеру / сканеру</span>
+      <p></p>
+    </div>
+  </div>
+<div>
+<hr size="5">
+
+</div>
+   <script src="lang.js"></script>
+   <script src="app.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   <script src="js/formMail.js"></script>
+   <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+     <script>
+       function slowScroll(id) {
+         $('html, body').animate({
+           scrollTop: $(id).offset().top
+         }, 500);
+       }
+      </script>
+      <script>
+        $(document).on("scroll", function () {
+          if($(window).scrollTop() === 0)
+            $("header").removeClass("fixed");
+          else
+            $("header").attr("class", "fixed");
+        }); 
+        </script>
+       
+     
+</body>
+</html>
